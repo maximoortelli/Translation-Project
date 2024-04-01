@@ -14,9 +14,62 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/* Desde Aca inicia*/
+.selectedImg{
+ width: 40px;
+ border-radius: 3px 3px 3px 3px;
 }
+
+.drop-down {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.322);
+  width:75px;
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.selected {
+  color: black;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.list {
+  background-color: #fff;
+  position:absolute;
+  top: 40px;
+  left: 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.322);
+  cursor: pointer;
+  width: 100%;
+  transform: translateY(2px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  gap: 0.5rem;
+}
+
+.item:hover{
+  background-color: gainsboro;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* Aca finaliza */
 
 @keyframes logo-spin {
   from {
